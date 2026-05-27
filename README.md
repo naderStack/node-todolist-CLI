@@ -9,13 +9,19 @@ A simple command-line task manager built with Node.js and the native `fs` module
 - ❌ Remove a specific task
 - 🧹 Clear all tasks
 
-## Built With
+## Technologies Used
 
 - Node.js
 - Native `fs` module (file system)
+- **JSON file** for persistent task storage
 
-## Installation
+## Storage Structure
 
-```bash
-git clone <your-repo-url>
-cd task-manager-cli
+Tasks are stored in a `tasks.json` file with the following format:
+
+```json
+[
+  "Buy groceries",
+  "Review lessons",
+  "Go to the gym"
+]
